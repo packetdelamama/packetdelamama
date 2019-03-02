@@ -1,4 +1,4 @@
-package com.example.packetdelamama;
+package com.example.packetdelamama.data;
 
 import java.util.Date;
 

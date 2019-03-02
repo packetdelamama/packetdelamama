@@ -1,4 +1,4 @@
-package com.example.packetdelamama;
+package com.example.packetdelamama.data;
 
 public class Car {
     private String plateNumber;
