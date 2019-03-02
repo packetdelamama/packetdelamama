@@ -1,5 +1,7 @@
 package com.example.packetdelamama;
 
+import java.util.Date;
+
 public class Ride {
     private Date pickupDate;
     private double price;
