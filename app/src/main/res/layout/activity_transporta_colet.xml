@@ -63,7 +63,7 @@
         android:layout_marginEnd="75dp"
         android:ems="10"
         android:hint="Pret lei"
-        android:inputType="textPersonName"
+        android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/cautaClienti"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

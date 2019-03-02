@@ -11,7 +11,7 @@ public class TransportaColet extends AppCompatActivity {
     public String oras_plecare;
     public String oras_sosire;
     public String ora_sosire;
-    public int pret_lei;
+    public String pret_lei;
 
 
     public EditText e_oras_plecare;
@@ -36,8 +36,8 @@ public class TransportaColet extends AppCompatActivity {
         e_ora_sosire = (EditText) findViewById (R.id.oraPlecare);
         ora_sosire = e_ora_sosire.getText().toString();
 
-        e_pret_lei = (EditText) findViewById (R.id.phoneLogin_text);
-        pret_lei = Integer.parseInt(e_pret_lei.getText().toString());
+        e_pret_lei = (EditText) findViewById (R.id.pretCursa);
+        pret_lei = e_pret_lei.getText().toString();
 
         button_afiseazaCereri = (Button) findViewById(R.id.cautaClienti);
         button_afiseazaCereri.setOnClickListener(new View.OnClickListener() {
