@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrimiteSiPrimeste">
+
+    <TextView
+        android:id="@+id/trimiteSiPrimeste_text"
+        android:layout_width="173dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="18dp"
+        android:text="Detalii livrare pachet"
+        app:layout_constraintBottom_toTopOf="@+id/orasTrimitere"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/orasTrimitere"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="Adauga adresa de livrare colet"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/orasPrimire"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trimiteSiPrimeste_text" />
+
+    <EditText
+        android:id="@+id/orasPrimire"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:hint="Adauga adresa de ridicare colet"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/telefonTrimitere"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orasTrimitere" />
+
+    <EditText
+        android:id="@+id/telefonTrimitere"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:hint="Numar de telefon plasare colet"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/telefonRidicare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orasPrimire" />
+
+    <EditText
+        android:id="@+id/telefonRidicare"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:hint="Numar de telefon ridicare colet"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/dataLivrare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telefonTrimitere" />
+
+    <EditText
+        android:id="@+id/dataLivrare"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:hint="Data ridicarii coletului: Zi/Luna"
+        android:inputType="datetime"
+        app:layout_constraintBottom_toTopOf="@+id/tipPlata"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telefonRidicare" />
+
+    <EditText
+        android:id="@+id/tipPlata"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="236dp"
+        android:ems="10"
+        android:hint="Cash/Card"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dataLivrare" />
+
+    <Button
+        android:id="@+id/cautaCurse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="249dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="105dp"
+        android:text="Cauta curse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipPlata" />
+
+
+</android.support.constraint.ConstraintLayout>

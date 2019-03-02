@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransportaColet">
+
+    <EditText
+        android:id="@+id/orasPlecare"
+        android:layout_width="262dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="75dp"
+        android:ems="10"
+        android:hint="Orasul de plecare"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/orasDestinatie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titluDetalii" />
+
+    <EditText
+        android:id="@+id/orasDestinatie"
+        android:layout_width="262dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="75dp"
+        android:ems="10"
+        android:hint="Orasul destinatie"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/oraPlecare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orasPlecare" />
+
+    <EditText
+        android:id="@+id/oraPlecare"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="75dp"
+        android:ems="10"
+        android:hint="Ora de plecare"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/pretCursa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orasDestinatie" />
+
+    <EditText
+        android:id="@+id/pretCursa"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="75dp"
+        android:ems="10"
+        android:hint="Pret lei"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/cautaClienti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oraPlecare" />
+
+    <Button
+        android:id="@+id/cautaClienti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="195dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="150dp"
+        android:text="Cautare clienti"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pretCursa" />
+
+    <TextView
+        android:id="@+id/titluDetalii"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="69dp"
+        android:text="Date de livrare"
+        app:layout_constraintBottom_toTopOf="@+id/orasPlecare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

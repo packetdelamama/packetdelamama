@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActionPage"></activity>
+        <activity android:name=".CereriDisponibile_DriverPerspective"></activity>
+        <activity android:name=".TransportaColet" />
+        <activity android:name=".CurseDisponibile" />
+        <activity android:name=".TrimiteSiPrimeste" />
+        <activity android:name=".ActionPage" />
         <activity android:name=".Register_MainPage" />
         <activity android:name=".Login_MainPage" />
         <activity android:name=".MainActivity">
