@@ -63,7 +63,7 @@
         android:layout_marginBottom="87dp"
         android:ems="10"
         android:hint="Add password here"
-        android:inputType="textPassword"
+        android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/passwordGenerator"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
