@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_MainPage">
+
+    <EditText
+        android:id="@+id/phoneLogin_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Add phone number here"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/passwordLogin_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pleaseLogin_text" />
+
+    <TextView
+        android:id="@+id/pleaseLogin_text"
+        android:layout_width="109dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="101dp"
+        android:text="Login"
+        app:layout_constraintBottom_toTopOf="@+id/phoneLogin_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:autoSizeMaxTextSize="@android:dimen/app_icon_size" />
+
+    <Button
+        android:id="@+id/passwordGenerator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="23dp"
+        android:text="Generate password"
+        app:layout_constraintBottom_toTopOf="@+id/loginButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLogin_text" />
+
+    <EditText
+        android:id="@+id/passwordLogin_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="87dp"
+        android:ems="10"
+        android:hint="Add password here"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/passwordGenerator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneLogin_text" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="180dp"
+        android:text="Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordGenerator" />
+
+</android.support.constraint.ConstraintLayout>
