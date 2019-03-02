@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class TransportaColet extends AppCompatActivity {
+
     public String oras_plecare;
     public String oras_sosire;
     public String ora_sosire;

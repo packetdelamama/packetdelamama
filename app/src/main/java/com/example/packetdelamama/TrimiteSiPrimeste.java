@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class TrimiteSiPrimeste extends AppCompatActivity {
+
     public String adresa_livrare;
     public String adresa_ridicare;
     public String telefon_livrare;

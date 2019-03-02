@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1082441442877",
+    "firebase_url": "https://pachetdelamama-39ff1.firebaseio.com",
+    "project_id": "pachetdelamama-39ff1",
+    "storage_bucket": "pachetdelamama-39ff1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082441442877:android:de37cd8eded1dc81",
+        "android_client_info": {
+          "package_name": "com.example.packetdelamama"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1082441442877-mtmqqiobc11tu98890ngkbcj2g09vro3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.packetdelamama",
+            "certificate_hash": "0002366ddefad88a21bcfdb4210b1a23f928d5cc"
+          }
+        },
+        {
+          "client_id": "1082441442877-dvk3i0c7n1ekiaeciemsomss4tqh6ud1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOwb2o4_XYWo_LehR5x0EvtvwkM8k6i_s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1082441442877-dvk3i0c7n1ekiaeciemsomss4tqh6ud1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

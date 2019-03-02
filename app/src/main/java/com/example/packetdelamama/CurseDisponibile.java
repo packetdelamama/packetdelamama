@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class CurseDisponibile extends AppCompatActivity {
+
     private Button button_trimiteCerere;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
