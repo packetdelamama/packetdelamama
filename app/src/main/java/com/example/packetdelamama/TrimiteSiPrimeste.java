@@ -7,6 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.packetdelamama.data.ClientsRequest;
+
+import java.util.ArrayList;
+
 public class TrimiteSiPrimeste extends AppCompatActivity {
 
     public String adresa_livrare;
@@ -15,6 +19,8 @@ public class TrimiteSiPrimeste extends AppCompatActivity {
     public String telefon_ridicare;
     public String data_ridicare;
     public String metoda_plata;
+
+    ArrayList<ClientsRequest> requests = new ArrayList<>();
 
     public EditText e_adresa_livrare;
     public EditText e_adresa_ridicare;
@@ -51,8 +57,13 @@ public class TrimiteSiPrimeste extends AppCompatActivity {
         button_trimiteSiPrimeste.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent_register = new Intent( TrimiteSiPrimeste.this, CurseDisponibile.class);
+                addRequest(adresa_livrare, adresa_ridicare, data_ridicare, telefon_ridicare, telefon_livrare, metoda_plata);
                 startActivity(intent_register);
             }
         });
+    }
+
+    protected void addRequest(String adresa_livrare, String adresa_ridicare, String data_ridicare, String telefon_ridicare, String telefon_livrare, String metoda_plata) {
+        requests.add(new ClientsRequest(adresa_ridicare, adresa_livrare, telefon_livrare, telefon_ridicare, data_ridicare, metoda_plata));
     }
 }
