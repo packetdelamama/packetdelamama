@@ -1,21 +1,19 @@
 package com.example.packetdelamama;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.ScrollView;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 public class ActionPage extends AppCompatActivity {
 
@@ -25,6 +23,8 @@ public class ActionPage extends AppCompatActivity {
     private Button button_Transport;
 
     private DrawerLayout drawerLayout;
+
+    public ScrollView scrollView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +46,7 @@ public class ActionPage extends AppCompatActivity {
                     public boolean onNavigationItemSelected(MenuItem menuItem) {
                         // set item as selected to persist highlight
                         menuItem.setChecked(true);
+                        scrollView.setEnabled(true);
                         // close drawer when item is tapped
                         drawerLayout.closeDrawers();
 
@@ -57,14 +58,14 @@ public class ActionPage extends AppCompatActivity {
                 });
 
         findViews();
-//        btnSignOut.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                FirebaseAuth.getInstance().signOut();
-//                startActivity(new Intent(ActionPage.this,Login_MainPage.class));
-//                finish();
-//            }
-//        });
+        btnSignOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(ActionPage.this,Login_MainPage.class));
+                finish();
+            }
+        });
         button_Trimit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent_register = new Intent( ActionPage.this, TrimiteSiPrimeste.class);
@@ -96,6 +97,7 @@ public class ActionPage extends AppCompatActivity {
         switch (item.getItemId()) {
             case android.R.id.home:
                 drawerLayout.openDrawer( GravityCompat.START);
+
                 return true;
         }
         return super.onOptionsItemSelected(item);
