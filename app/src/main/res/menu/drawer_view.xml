@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+        <item android:title="Actiuni cont">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_account"
+                        android:title="Contul meu" />
+                    <item
+                        android:id="@+id/nav_raiting"
+                        android:title="Raiting-ul meu" />
+                    <item
+                        android:id="@+id/nav_curCom"
+                        android:title="Comanda curenta" />
+                    <item
+                        android:id="@+id/nav_histCom"
+                        android:title="Istoric comenzi" />
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="Administrativ">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_evalLeft"
+                        android:title="Evaluari lasate" />
+                    <item
+                        android:id="@+id/nav_reqMoney"
+                        android:title="Solicita-ti banii" />
+                    <item
+                        android:id="@+id/nav_platiSiRam"
+                        android:title="Plati si rambursuri" />
+                    <item
+                        android:id="@+id/nav_transMade"
+                        android:title="Transferuri efectuate" />
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="Setari">
+            <menu>
+                <group android:checkableBehavior="single">
+
+                    <item
+                        android:id="@+id/nav_sec"
+                        android:title="Securitate" />
+                    <item
+                        android:id="@+id/nav_addr"
+                        android:title="Schimba adresele" />
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="Altele">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_help"
+                        android:title="Ajutor" />
+                    <item
+                        android:id="@+id/nav_termsandcond"
+                        android:title="Termeni si conditii" />
+                    <item
+                        android:id="@+id/nav_confPolicy"
+                        android:title="Politica de confidentialitate" />
+                </group>
+            </menu>
+        </item>
+</menu>
