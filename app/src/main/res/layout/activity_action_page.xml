@@ -1,68 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    tools:context=".ActionPage">
+    android:fitsSystemWindows="true">
 
-    <Button
-        android:id="@+id/trimitePachet"
-        android:layout_width="148dp"
-        android:layout_height="96dp"
-        android:layout_marginStart="131dp"
-        android:layout_marginTop="159dp"
-        android:layout_marginEnd="132dp"
-        android:layout_marginBottom="50dp"
-        android:background="@color/colorAccent"
-        android:text="Trimite"
-        app:layout_constraintBottom_toTopOf="@+id/primestePachet"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_view">
 
-    <Button
-        android:id="@+id/primestePachet"
-        android:layout_width="148dp"
-        android:layout_height="96dp"
-        android:layout_marginStart="131dp"
-        android:layout_marginEnd="132dp"
-        android:layout_marginBottom="50dp"
-        android:background="@color/colorAccent"
-        android:text="Primeste"
-        app:layout_constraintBottom_toTopOf="@+id/transportaPachet"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/trimitePachet" />
+    </android.support.design.widget.NavigationView>
 
-    <Button
-        android:id="@+id/transportaPachet"
-        android:layout_width="148dp"
-        android:layout_height="96dp"
-        android:layout_marginStart="131dp"
-        android:layout_marginEnd="132dp"
-        android:layout_marginBottom="160dp"
-        android:background="@color/colorAccent"
-        android:text="Transporta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/primestePachet" />
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
 
-    <Button
-        android:id="@+id/btn_sign_out"
-        android:layout_width="63dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="304dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="676dp"
-        android:background="@color/colorAccent"
-        android:text="Sign out"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="481dp"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:layout_constraintBottom_toTopOf="@+id/transportaPachet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+        <Button
+            android:id="@+id/trimitePachet"
+            android:layout_width="148dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="131dp"
+            android:layout_marginTop="159dp"
+            android:layout_marginEnd="132dp"
+            android:layout_marginBottom="50dp"
+            android:background="@color/colorAccent"
+            android:text="Trimite"
+            app:layout_constraintBottom_toTopOf="@+id/primestePachet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/primestePachet"
+            android:layout_width="148dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="131dp"
+            android:layout_marginEnd="132dp"
+            android:layout_marginBottom="50dp"
+            android:background="@color/colorAccent"
+            android:text="Primeste"
+            app:layout_constraintBottom_toTopOf="@+id/transportaPachet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trimitePachet" />
+
+        <Button
+            android:id="@+id/transportaPachet"
+            android:layout_width="148dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="131dp"
+            android:layout_marginEnd="132dp"
+            android:layout_marginBottom="160dp"
+            android:background="@color/colorAccent"
+            android:text="Transporta"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/primestePachet" />
+
+        <Button
+            android:id="@+id/btn_sign_out"
+            android:layout_width="63dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="304dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="676dp"
+            android:background="@color/colorAccent"
+            android:text="Sign out"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
+
+
+</android.support.v4.widget.DrawerLayout>
