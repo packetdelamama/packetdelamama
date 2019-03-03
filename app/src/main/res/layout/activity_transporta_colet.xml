@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".TransportaColet">
 
     <EditText
@@ -77,6 +78,7 @@
         android:layout_marginStart="195dp"
         android:layout_marginEnd="75dp"
         android:layout_marginBottom="16dp"
+        android:background="@color/colorAccent"
         android:text="Cautare clienti"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

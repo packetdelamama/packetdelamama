@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".Register_MainPage">
 
     <TextView
@@ -76,6 +77,7 @@
         android:layout_marginTop="177dp"
         android:layout_marginEnd="82dp"
         android:layout_marginBottom="154dp"
+        android:background="@color/colorAccent"
         android:text="Register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,6 +92,7 @@
         android:layout_marginTop="176dp"
         android:layout_marginEnd="73dp"
         android:layout_marginBottom="155dp"
+        android:background="@color/colorAccent"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/save_register"

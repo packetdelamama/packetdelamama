@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".ActionPage">
 
     <Button
@@ -14,6 +15,7 @@
         android:layout_marginTop="159dp"
         android:layout_marginEnd="132dp"
         android:layout_marginBottom="50dp"
+        android:background="@color/colorAccent"
         android:text="Trimite"
         app:layout_constraintBottom_toTopOf="@+id/primestePachet"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,6 +29,7 @@
         android:layout_marginStart="131dp"
         android:layout_marginEnd="132dp"
         android:layout_marginBottom="50dp"
+        android:background="@color/colorAccent"
         android:text="Primeste"
         app:layout_constraintBottom_toTopOf="@+id/transportaPachet"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,6 +43,7 @@
         android:layout_marginStart="131dp"
         android:layout_marginEnd="132dp"
         android:layout_marginBottom="160dp"
+        android:background="@color/colorAccent"
         android:text="Transporta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,12 +52,13 @@
 
     <Button
         android:id="@+id/btn_sign_out"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="288dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginBottom="656dp"
+        android:layout_width="63dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="676dp"
+        android:background="@color/colorAccent"
         android:text="Sign out"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

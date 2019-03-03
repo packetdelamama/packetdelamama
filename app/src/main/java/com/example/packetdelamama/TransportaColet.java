@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.packetdelamama.data.ClientsRequest;
 import com.example.packetdelamama.data.DriversRequest;
 
 import java.sql.Driver;
@@ -21,6 +22,7 @@ public class TransportaColet extends AppCompatActivity {
     public String pret_lei;
 
     ArrayList<DriversRequest> requests = new ArrayList<>();
+    ArrayList<String> match_list = new ArrayList<>();
 
     public EditText e_oras_plecare;
     public EditText e_oras_sosire;
@@ -48,6 +50,18 @@ public class TransportaColet extends AppCompatActivity {
 
         e_pret_lei = findViewById (R.id.pretCursa);
         pret_lei = e_pret_lei.getText().toString();
+
+        //Primeste lista de drivers
+        TrimiteSiPrimeste clients = new TrimiteSiPrimeste();
+
+        for ( ClientsRequest client : clients.requests ) {
+            Boolean match = client.adresa_ridicare.equals(oras_plecare) && client.adresa_livrare.equals(oras_sosire)
+                    && client.data_ridicare.equals(data_plecare);
+            if ( match ) {
+                match_list.add("De la: <" + client.adresa_ridicare + "> catre <" + client.adresa_livrare + ">"
+                        + "\n" + "Tel. ridicare: <" + client.telefon_ridicare + "> Tel. predare: <" + client.telefon_livrare + ">");
+            }
+        }
 
         Button button_afiseazaCereri = findViewById(R.id.cautaClienti);
         button_afiseazaCereri.setOnClickListener(new View.OnClickListener() {
